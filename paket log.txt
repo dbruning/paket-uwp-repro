@@ -1,0 +1,245 @@
+PM> .\.paket\paket.exe convert-from-nuget -v
+Paket version 5.2.1
+Could not find AppDataFolder, try to set the APPDATA environment variable. Using 'C:\Users\darren\Documents\paket-uwp-repro\.paket' instead.
+Could not detect a root for our (user specific) temporary files. Try to set the 'HOME' or 'LocalAppData' environment variable!. Using 'C:\Users\darren\Documents\paket-uwp-repro\.paket' instead.
+Could not find LocalApplicationData folder, try to set the 'LocalAppData' environment variable. Using 'C:\Users\darren\Documents\paket-uwp-repro\.paket' instead
+Dependencies files saved to C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies
+Project C:\Users\darren\Documents\paket-uwp-repro\paket-uwp-repro\paket-uwp-repro.csproj changed
+References file saved to C:\Users\darren\Documents\paket-uwp-repro\paket-uwp-repro\paket.references
+Solution C:\Users\darren\Documents\paket-uwp-repro\paket-uwp-repro.sln changed
+Parsing C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies
+Resolving packages for group Main:
+   0 packages in resolution.
+   2 requirements left
+     - Newtonsoft.Json, 10.0.3 (from C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies)
+     - Microsoft.NETCore.UniversalWindowsPlatform, 5.2.3 (from C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies)
+
+  Trying to resolve Newtonsoft.Json 10.0.3 (from C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies)
+Starting request to 'https://api.nuget.org/v3/index.json'
+Starting request to 'https://api.nuget.org/v3/index.json'
+ - Newtonsoft.Json is pinned to 10.0.3
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'newtonsoft.json''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='Microsoft.NETCore.UniversalWindowsPlatform''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.netcore.universalwindowsplatform''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='Microsoft.NETCore.UniversalWindowsPlatform''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='Newtonsoft.Json''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'newtonsoft.json''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.netcore.universalwindowsplatform''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='Newtonsoft.Json''
+Starting request to 'https://nuget.org/api/v2/Packages?$filter=(tolower(Id) eq 'newtonsoft.json') and (NormalizedVersion eq '10.0.3')'
+Starting request to 'https://api.nuget.org/v3-flatcontainer/Microsoft.NETCore.UniversalWindowsPlatform/index.json?semVerLevel=2.0.0'
+Starting request to 'https://api.nuget.org/v3-flatcontainer/Newtonsoft.Json/index.json?semVerLevel=2.0.0'
+Response from https://nuget.org/api/v2/Packages?$filter=(tolower(Id) eq 'newtonsoft.json') and (NormalizedVersion eq '10.0.3'):
+
+<?xml version="1.0" encoding="utf-8"?><feed xml:base="https://www.nuget.org/api/v2" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml"><id>http://schemas.datacontract.org/2004/07/</id><title /><updated>2017-06-26T21:51:13Z</updated><link rel="self" href="https://www.nuget.org/api/v2/Packages" /><entry><id>https://www.nuget.org/api/v2/Packages(Id='Newtonsoft.Json',Version='10.0.3')</id><category term="NuGetGallery.OData.V2FeedPackage" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" /><link rel="edit" href="https://www.nuget.org/api/v2/Packages(Id='Newtonsoft.Json',Version='10.0.3')" /><link rel="self" href="https://www.nuget.org/api/v2/Packages(Id='Newtonsoft.Json',Version='10.0.3')" /><title type="text">Newtonsoft.Json</title><updated>2017-06-18T02:10:29Z</updated><author><name>James Newton-King</name></author><content type="application/zip" src="https://www.nuget.org/api/v2/package/Newtonsoft.Json/10.0.3" /><m:properties><d:Id>Newtonsoft.Json</d:Id><d:Version>10.0.3</d:Version><d:NormalizedVersion>10.0.3</d:NormalizedVersion><d:Authors>James Newton-King</d:Authors><d:Copyright>Copyright Ac James Newton-King 2008</d:Copyright><d:Created m:type="Edm.DateTime">2017-06-18T02:10:29.603</d:Created><d:Dependencies>::net20|::net35|::net40|::net45|NETStandard.Library:[1.6.1, ):netstandard1.0|Microsoft.CSharp:[4.3.0, ):netstandard1.0|System.ComponentModel.TypeConverter:[4.3.0, ):netstandard1.0|System.Runtime.Serialization.Primitives:[4.3.0, ):netstandard1.0|NETStandard.Library:[1.6.1, ):netstandard1.3|Microsoft.CSharp:[4.3.0, ):netstandard1.3|System.ComponentModel.TypeConverter:[4.3.0, ):netstandard1.3|System.Runtime.Serialization.Primitives:[4.3.0, ):netstandard1.3|System.Runtime.Serialization.Formatters:[4.3.0, ):netstandard1.3|System.Xml.XmlDocument:[4.3.0, ):netstandard1.3|::portable-net40+sl5+win8+wp8+wpa81|::portable-net45+win8+wp8+wpa81</d:Dependencies><d:Description>Json.NET is a popular high-performance JSON framework for .NET</d:Description><d:DownloadCount m:type="Edm.Int32">65834948</d:DownloadCount><d:GalleryDetailsUrl>https://www.nuget.org/packages/Newtonsoft.Json/10.0.3</d:GalleryDetailsUrl><d:IconUrl>http://www.newtonsoft.com/content/images/nugeticon.png</d:IconUrl><d:IsLatestVersion m:type="Edm.Boolean">true</d:IsLatestVersion><d:IsAbsoluteLatestVersion m:type="Edm.Boolean">true</d:IsAbsoluteLatestVersion><d:IsPrerelease m:type="Edm.Boolean">false</d:IsPrerelease><d:Language m:null="true" /><d:LastUpdated m:type="Edm.DateTime">2017-06-18T02:10:29.603</d:LastUpdated><d:Published m:type="Edm.DateTime">2017-06-18T02:10:29.603</d:Published><d:PackageHash>wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==</d:PackageHash><d:PackageHashAlgorithm>SHA512</d:PackageHashAlgorithm><d:PackageSize m:type="Edm.Int64">2066867</d:PackageSize><d:ProjectUrl>http://www.newtonsoft.com/json</d:ProjectUrl><d:ReportAbuseUrl>https://www.nuget.org/packages/Newtonsoft.Json/10.0.3/ReportAbuse</d:ReportAbuseUrl><d:ReleaseNotes m:null="true" /><d:RequireLicenseAcceptance m:type="Edm.Boolean">false</d:RequireLicenseAcceptance><d:Summary m:null="true" /><d:Tags>json</d:Tags><d:Title>Json.NET</d:Title><d:VersionDownloadCount m:type="Edm.Int32">117150</d:VersionDownloadCount><d:MinClientVersion>2.12</d:MinClientVersion><d:LastEdited m:null="true" /><d:LicenseUrl>https://raw.github.com/JamesNK/Newtonsoft.Json/master/LICENSE.md</d:LicenseUrl><d:LicenseNames m:null="true" /><d:LicenseReportUrl m:null="true" /></m:properties></entry></feed>
+   Found Explored Package  Newtonsoft.Json 10.0.3
+Starting request to 'https://api.nuget.org/v3-flatcontainer/NETStandard.Library/index.json?semVerLevel=2.0.0'
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'netstandard.library''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='NETStandard.Library''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'netstandard.library''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='NETStandard.Library''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.csharp''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.csharp''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.componentmodel.typeconverter''
+Starting request to 'https://api.nuget.org/v3-flatcontainer/System.Xml.XmlDocument/index.json?semVerLevel=2.0.0'
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.xml.xmldocument''
+Starting request to 'https://api.nuget.org/v3-flatcontainer/System.ComponentModel.TypeConverter/index.json?semVerLevel=2.0.0'
+Starting request to 'https://api.nuget.org/v3-flatcontainer/Microsoft.CSharp/index.json?semVerLevel=2.0.0'
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.xml.xmldocument''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.componentmodel.typeconverter''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='Microsoft.CSharp''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='Microsoft.CSharp''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='System.ComponentModel.TypeConverter''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='System.ComponentModel.TypeConverter''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.runtime.serialization.primitives''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='System.Xml.XmlDocument''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.runtime.serialization.primitives''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='System.Xml.XmlDocument''
+Starting request to 'https://api.nuget.org/v3-flatcontainer/System.Runtime.Serialization.Primitives/index.json?semVerLevel=2.0.0'
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.runtime.serialization.formatters''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'system.runtime.serialization.formatters''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='System.Runtime.Serialization.Primitives''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='System.Runtime.Serialization.Formatters''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='System.Runtime.Serialization.Formatters''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='System.Runtime.Serialization.Primitives''
+Starting request to 'https://api.nuget.org/v3-flatcontainer/System.Runtime.Serialization.Formatters/index.json?semVerLevel=2.0.0'
+   1 packages in resolution.
+     - Newtonsoft.Json, 10.0.3
+   7 requirements left
+     - Microsoft.NETCore.UniversalWindowsPlatform, 5.2.3 (from C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies)
+     - Microsoft.CSharp, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.ComponentModel.TypeConverter, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Runtime.Serialization.Formatters, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Runtime.Serialization.Primitives, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Xml.XmlDocument, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - NETStandard.Library, >= 1.6.1 (from Newtonsoft.Json 10.0.3)
+
+  Trying to resolve Microsoft.NETCore.UniversalWindowsPlatform 5.2.3 (from C:\Users\darren\Documents\paket-uwp-repro\paket.dependencies)
+ - Microsoft.NETCore.UniversalWindowsPlatform is pinned to 5.2.3
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'microsoft.netcore.universalwindowsplatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.2.0-rc2-23805''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='Microsoft.NETCore.UniversalWindowsPlatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.2.0-rc2-23805''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='Microsoft.NETCore.UniversalWindowsPlatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.2.3-beta-001006-00''
+Source 'https://dotnet.myget.org/F/dotnet-core' yielded (1): [9.0.1]
+ - Request 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById()?semVerLevel=2.0.0&id='Newtonsoft.Json'' was cancelled (another one was faster)
+ - Request 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'newtonsoft.json'' finished with: [9.0.1]
+Source 'https://dotnet.myget.org/F/cli-deps' yielded (1): [4.5.11 ; 6.0.1 ; 6.0.4 ; 7.0.1 ; 9.0.1]
+ - Request 'https://dotnet.myget.org/F/cli-deps/FindPackagesById()?semVerLevel=2.0.0&id='Newtonsoft.Json'' is not finished jet
+ - Request 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'newtonsoft.json'' finished with: [4.5.11 ; 6.0.1 ; 6.0.4 ; 7.0.1 ; 9.0.1]
+Source 'https://api.nuget.org/v3/index.json' yielded (0): [10.0.3 ; 10.0.2 ; 10.0.1 ; 10.0.1-beta1 ; 9.0.2-beta2 ; 9.0.2-beta1 ; 9.0.1 ; 9.0.1-beta1 ; 8.0.4-beta1 ; 8.0.3 ; 8.0.2 ; 8.0.1 ; 8.0.1-beta4 ; 8.0.1-beta3 ; 8.0.1-beta2 ; 8.0.1-beta1 ; 7.0.1 ; 7.0.1-beta3 ; 7.0.1-beta2 ; 7.0.1-beta1 ; 6.0.8 ; 6.0.7 ; 6.0.6 ; 6.0.5 ; 6.0.4 ; 6.0.3 ; 6.0.2 ; 6.0.1 ; 6.0.1-beta1 ; 5.0.8 ; 5.0.7 ; 5.0.6 ; 5.0.5 ; 5.0.4 ; 5.0.3 ; 5.0.2 ; 5.0.1 ; 4.5.11 ; 4.5.10 ; 4.5.9 ; 4.5.8 ; 4.5.7 ; 4.5.6 ; 4.5.5 ; 4.5.4 ; 4.5.3 ; 4.5.2 ; 4.5.1 ; 4.0.8 ; 4.0.7 ; 4.0.6 ; 4.0.5 ; 4.0.4 ; 4.0.3 ; 4.0.2 ; 4.0.1 ; 3.5.8]
+ - Request 'https://api.nuget.org/v3-flatcontainer/Newtonsoft.Json/index.json?semVerLevel=2.0.0' finished with: [10.0.3 ; 10.0.2 ; 10.0.1 ; 10.0.1-beta1 ; 9.0.2-beta2 ; 9.0.2-beta1 ; 9.0.1 ; 9.0.1-beta1 ; 8.0.4-beta1 ; 8.0.3 ; 8.0.2 ; 8.0.1 ; 8.0.1-beta4 ; 8.0.1-beta3 ; 8.0.1-beta2 ; 8.0.1-beta1 ; 7.0.1 ; 7.0.1-beta3 ; 7.0.1-beta2 ; 7.0.1-beta1 ; 6.0.8 ; 6.0.7 ; 6.0.6 ; 6.0.5 ; 6.0.4 ; 6.0.3 ; 6.0.2 ; 6.0.1 ; 6.0.1-beta1 ; 5.0.8 ; 5.0.7 ; 5.0.6 ; 5.0.5 ; 5.0.4 ; 5.0.3 ; 5.0.2 ; 5.0.1 ; 4.5.11 ; 4.5.10 ; 4.5.9 ; 4.5.8 ; 4.5.7 ; 4.5.6 ; 4.5.5 ; 4.5.4 ; 4.5.3 ; 4.5.2 ; 4.5.1 ; 4.0.8 ; 4.0.7 ; 4.0.6 ; 4.0.5 ; 4.0.4 ; 4.0.3 ; 4.0.2 ; 4.0.1 ; 3.5.8]
+
+Starting request to 'https://nuget.org/api/v2/Packages?$filter=(tolower(Id) eq 'microsoft.netcore.universalwindowsplatform') and (NormalizedVersion eq '5.2.3')'
+Response from https://nuget.org/api/v2/Packages?$filter=(tolower(Id) eq 'microsoft.netcore.universalwindowsplatform') and (NormalizedVersion eq '5.2.3'):
+
+<?xml version="1.0" encoding="utf-8"?><feed xml:base="https://www.nuget.org/api/v2" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml"><id>http://schemas.datacontract.org/2004/07/</id><title /><updated>2017-06-26T21:52:01Z</updated><link rel="self" href="https://www.nuget.org/api/v2/Packages" /><entry><id>https://www.nuget.org/api/v2/Packages(Id='Microsoft.NETCore.UniversalWindowsPlatform',Version='5.2.3')</id><category term="NuGetGallery.OData.V2FeedPackage" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" /><link rel="edit" href="https://www.nuget.org/api/v2/Packages(Id='Microsoft.NETCore.UniversalWindowsPlatform',Version='5.2.3')" /><link rel="self" href="https://www.nuget.org/api/v2/Packages(Id='Microsoft.NETCore.UniversalWindowsPlatform',Version='5.2.3')" /><title type="text">Microsoft.NETCore.UniversalWindowsPlatform</title><updated>2017-04-27T18:14:51Z</updated><author><name>Microsoft</name></author><content type="application/zip" src="https://www.nuget.org/api/v2/package/Microsoft.NETCore.UniversalWindowsPlatform/5.2.3" /><m:properties><d:Id>Microsoft.NETCore.UniversalWindowsPlatform</d:Id><d:Version>5.2.3</d:Version><d:NormalizedVersion>5.2.3</d:NormalizedVersion><d:Authors>Microsoft</d:Authors><d:Copyright>Ac Microsoft Corporation.  All rights reserved.</d:Copyright><d:Created m:type="Edm.DateTime">2017-03-07T19:46:35.92</d:Created><d:Dependencies>Microsoft.NETCore:[5.0.2, ):|Microsoft.NETCore.Portable.Compatibility:[1.0.2, ):|Microsoft.NETCore.Runtime.CoreCLR:[1.0.3, ):|Microsoft.NETCore.Targets:[1.0.2, ):|Microsoft.Win32.Primitives:[4.0.1, ):|System.Collections.NonGeneric:[4.0.1, ):|System.Collections.Specialized:[4.0.1, ):|System.ComponentModel.EventBasedAsync:[4.0.11, ):|System.Data.Common:[4.1.0, ):|System.Diagnostics.Contracts:[4.0.1, ):|System.Diagnostics.StackTrace:[4.0.2, ):|System.IO.IsolatedStorage:[4.0.1, ):|System.Net.Http.Rtc:[4.0.1, ):|System.Net.NameResolution:[4.0.0, ):|System.Net.Requests:[4.0.11, ):|System.Net.Sockets:[4.1.0, ):|System.Net.WebHeaderCollection:[4.0.1, ):|System.Net.WebSockets:[4.0.0, ):|System.Net.WebSockets.Client:[4.0.0, ):|System.Numerics.Vectors.WindowsRuntime:[4.0.1, ):|System.Reflection.Context:[4.0.1, ):|System.Runtime.InteropServices.WindowsRuntime:[4.0.1, ):|System.Runtime.Serialization.Json:[4.0.3, ):|System.Runtime.Serialization.Primitives:[4.1.1, ):|System.Runtime.Serialization.Xml:[4.1.2, ):|System.Runtime.WindowsRuntime:[4.0.11, ):|System.Runtime.WindowsRuntime.UI.Xaml:[4.0.1, ):|System.ServiceModel.Duplex:[4.0.1, ):|System.ServiceModel.Http:[4.1.0, ):|System.ServiceModel.NetTcp:[4.1.0, ):|System.ServiceModel.Primitives:[4.1.0, ):|System.ServiceModel.Security:[4.0.1, ):|System.Text.Encoding.CodePages:[4.0.1, ):|System.Threading.Overlapped:[4.0.1, ):|System.Xml.XmlDocument:[4.0.1, ):|System.Xml.XmlSerializer:[4.0.11, ):</d:Dependencies><d:Description>Provides a set of packages that can be used when building Universal Windows applications on .NET.&#xD;
+&#xD;
+5.2.3 contains .NET Native 1.4 plus the following two fixes:&#xD;
+- Fixed an issue that caused DataContractJsonSerializer to fail to serialize any [DataContract] type whose default constructor is not public.&#xD;
+- Fixed a regression in 5.2.2 where 4 Libraries were accidently no longer referenced by default&#xD;
+    - System.Collections.NonGeneric&#xD;
+    - System.Collections.Specialized&#xD;
+    - System.Threading.Overlapped&#xD;
+    - System.Xml.XmlDocument&#xD;
+&#xD;
+When using Visual Studio this package requires Visual Studio 2015 Update 3 or later.&#xD;
+ &#xD;
+When using NuGet 3.x this package requires at least version 3.4.</d:Description><d:DownloadCount m:type="Edm.Int32">1281640</d:DownloadCount><d:GalleryDetailsUrl>https://www.nuget.org/packages/Microsoft.NETCore.UniversalWindowsPlatform/5.2.3</d:GalleryDetailsUrl><d:IconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</d:IconUrl><d:IsLatestVersion m:type="Edm.Boolean">false</d:IsLatestVersion><d:IsAbsoluteLatestVersion m:type="Edm.Boolean">false</d:IsAbsoluteLatestVersion><d:IsPrerelease m:type="Edm.Boolean">false</d:IsPrerelease><d:Language m:null="true" /><d:LastUpdated m:type="Edm.DateTime">2017-04-27T18:14:51.32</d:LastUpdated><d:Published m:type="Edm.DateTime">2017-03-07T19:46:35.92</d:Published><d:PackageHash>j9TvGPvxH42R7hZ4AzhSO7WdWWbDxtw69RbM2YzV2wAOnUf8MHRv3DTRT1oV0amPW779/HLr7YJuRF6QByaOAA==</d:PackageHash><d:PackageHashAlgorithm>SHA512</d:PackageHashAlgorithm><d:PackageSize m:type="Edm.Int64">7868</d:PackageSize><d:ProjectUrl>https://github.com/Microsoft/dotnet/blob/master/releases/UWP/README.md</d:ProjectUrl><d:ReportAbuseUrl>https://www.nuget.org/packages/Microsoft.NETCore.UniversalWindowsPlatform/5.2.3/ReportAbuse</d:ReportAbuseUrl><d:ReleaseNotes>https://github.com/Microsoft/dotnet/blob/master/releases/UWP/README.md</d:ReleaseNotes><d:RequireLicenseAcceptance m:type="Edm.Boolean">true</d:RequireLicenseAcceptance><d:Summary m:null="true" /><d:Tags m:null="true" /><d:Title>Microsoft.NETCore.UniversalWindowsPlatform</d:Title><d:VersionDownloadCount m:type="Edm.Int32">20183</d:VersionDownloadCount><d:MinClientVersion>2.12</d:MinClientVersion><d:LastEdited m:type="Edm.DateTime">2017-04-27T18:14:51.32</d:LastEdited><d:LicenseUrl>http://go.microsoft.com/fwlink/?LinkId=329770</d:LicenseUrl><d:LicenseNames m:null="true" /><d:LicenseReportUrl m:null="true" /></m:properties></entry></feed>
+   Found Explored Package  Microsoft.NETCore.UniversalWindowsPlatform 5.2.3
+Starting request to 'https://api.nuget.org/v3-flatcontainer/Microsoft.NETCore/index.json?semVerLevel=2.0.0'
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.netcore''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?semVerLevel=2.0.0&$filter=tolower(Id) eq 'microsoft.netcore''
+   2 packages in resolution.
+     - Microsoft.NETCore.UniversalWindowsPlatform, 5.2.3
+     - Newtonsoft.Json, 10.0.3
+   42 requirements left
+     - Microsoft.NETCore, >= 5.0.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - Microsoft.CSharp, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.ComponentModel.TypeConverter, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Runtime.Serialization.Formatters, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Runtime.Serialization.Primitives, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Xml.XmlDocument, >= 4.3 (from Newtonsoft.Json 10.0.3)
+     - System.Runtime.Serialization.Xml, >= 4.1.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Runtime.Serialization.Primitives, >= 4.1.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Data.Common, >= 4.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.Sockets, >= 4.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ServiceModel.Http, >= 4.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ServiceModel.NetTcp, >= 4.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ServiceModel.Primitives, >= 4.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ComponentModel.EventBasedAsync, >= 4.0.11 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.Requests, >= 4.0.11 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Runtime.WindowsRuntime, >= 4.0.11 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Xml.XmlSerializer, >= 4.0.11 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Runtime.Serialization.Json, >= 4.0.3 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Diagnostics.StackTrace, >= 4.0.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - Microsoft.Win32.Primitives, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Collections.NonGeneric, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Collections.Specialized, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Diagnostics.Contracts, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.IO.IsolatedStorage, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.Http.Rtc, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.WebHeaderCollection, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Numerics.Vectors.WindowsRuntime, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Reflection.Context, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Runtime.InteropServices.WindowsRuntime, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Runtime.WindowsRuntime.UI.Xaml, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ServiceModel.Duplex, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.ServiceModel.Security, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Text.Encoding.CodePages, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Threading.Overlapped, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Xml.XmlDocument, >= 4.0.1 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.NameResolution, >= 4.0 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.WebSockets, >= 4.0 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - System.Net.WebSockets.Client, >= 4.0 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - NETStandard.Library, >= 1.6.1 (from Newtonsoft.Json 10.0.3)
+     - Microsoft.NETCore.Runtime.CoreCLR, >= 1.0.3 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - Microsoft.NETCore.Portable.Compatibility, >= 1.0.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+     - Microsoft.NETCore.Targets, >= 1.0.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+
+  Trying to resolve Microsoft.NETCore >= 5.0.2 (from Microsoft.NETCore.UniversalWindowsPlatform 5.2.3)
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'microsoft.netcore.universalwindowsplatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.2.3-beta-001006-00''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='NETStandard.Library'&$skiptoken='NETStandard.Library','1.6.0-rc4-24205-02''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='NETStandard.Library'&$skiptoken='NETStandard.Library','1.5.0-rc2-24011''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'netstandard.library'&$skiptoken='NETStandard.Library','1.6.0-rc4-24205-02''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'microsoft.csharp'&$skiptoken='Microsoft.CSharp','4.0.1-rc2-24018''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'netstandard.library'&$skiptoken='NETStandard.Library','1.5.0-rc2-24011''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'system.xml.xmldocument'&$skiptoken='System.Xml.XmlDocument','4.0.1-rc4-24205-03''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'microsoft.csharp'&$skiptoken='Microsoft.CSharp','4.0.1-rc4-24204-01''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'system.componentmodel.typeconverter'&$skiptoken='System.ComponentModel.TypeConverter','4.0.1-rc2-24027''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='Microsoft.CSharp'&$skiptoken='Microsoft.CSharp','4.0.1-rc4-24204-01''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='System.ComponentModel.TypeConverter'&$skiptoken='System.ComponentModel.TypeConverter','4.0.1-rc2-24027''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='System.Xml.XmlDocument'&$skiptoken='System.Xml.XmlDocument','4.0.1-rc4-24205-03''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='System.Xml.XmlDocument'&$skiptoken='System.Xml.XmlDocument','4.0.1-rc2-24018''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'system.runtime.serialization.formatters'&$skiptoken='System.Runtime.Serialization.Formatters','4.0.0-rc4-24214-01''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='System.Runtime.Serialization.Formatters'&$skiptoken='System.Runtime.Serialization.Formatters','4.0.1-beta-24221-01''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='System.Runtime.Serialization.Primitives'&$skiptoken='System.Runtime.Serialization.Primitives','4.1.1-rc4-24205-03''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'microsoft.netcore.universalwindowsplatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.2.0-rc3-24104-00''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='Microsoft.NETCore.UniversalWindowsPlatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.3.0-beta-001153-00''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'system.componentmodel.typeconverter'&$skiptoken='System.ComponentModel.TypeConverter','4.1.0-rc4-24206-02''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/Packages?$filter=tolower(Id)%20eq%20'microsoft.netcore.universalwindowsplatform'&$skiptoken='Microsoft.NETCore.UniversalWindowsPlatform','5.3.0-beta-001153-00''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='NETStandard.Library'&$skiptoken='NETStandard.Library','1.6.1-beta-24309-01''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='NETStandard.Library'&$skiptoken='NETStandard.Library','1.6.0-rc4-24201-05''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'system.xml.xmldocument'&$skiptoken='System.Xml.XmlDocument','4.0.1-rc2-24018''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/FindPackagesById?id='Microsoft.CSharp'&$skiptoken='Microsoft.CSharp','4.0.1-rc2-24018''
+Starting request to 'https://dotnet.myget.org/F/dotnet-core/Packages?$filter=tolower(Id)%20eq%20'microsoft.csharp'&$skiptoken='Microsoft.CSharp','4.0.1-rc3-24206-01''
+Starting request to 'https://dotnet.myget.org/F/cli-deps/FindPackagesById?id='System.ComponentModel.TypeConverter'&$skiptoken='System.ComponentModel.TypeConverter','4.1.0-rc4-24206-02''
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Worker-Task was canceled
+Performance:
+ - Resolver: 3 minutes, 51 seconds (1 runs)
+    - Runtime: 1 second
+    - Blocked (retrieving package versions): 3 minutes (1 times)
+    - Blocked (retrieving package details): 50 seconds (2 times)
+ - Average Request Time: 1 minute, 18 seconds
+ - Number of Requests: 46
+ - Runtime: 3 minutes, 53 seconds
+.\.paket\paket.exe : Paket failed with:
+At line:1 char:1
++ .\.paket\paket.exe convert-from-nuget -v
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Paket failed with::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+-> Unable to retrieve package versions for 'Microsoft.NETCore'
+
+   StackTrace:
+
+        at Paket.PackageResolver.getVersionsBlock@885-1.Invoke(PackageName packageName)
+        at Paket.PackageResolver.getCompatibleVersions$cont@487(ResolverStep currentStep, GroupName groupName, PackageRequirement currentRequirement, FSharpFunc`2 getV
+ersionsF, Boolean globalOverride, FSharpOption`1 globalStrategyForDirectDependencies, FSharpOption`1 globalStrategyForTransitives, Unit unitVar)
+        at Paket.PackageResolver.getCompatibleVersions(ResolverStep currentStep, GroupName groupName, PackageRequirement currentRequirement, FSharpFunc`2 getVersionsF, 
+Boolean globalOverride, FSharpOption`1 globalStrategyForDirectDependencies, FSharpOption`1 globalStrategyForTransitives)
+        at Paket.PackageResolver.step@931[a](UpdateMode updateMode, GroupName groupName, FSharpOption`1 globalStrategyForTransitives, FSharpOption`1 
+globalStrategyForDirectDependencies, FrameworkRestrictions globalFrameworkRestrictions, FSharpFunc`2 getVersionsRaw, FSharpFunc`2 getPreferredVersionsRaw, FSharpFunc`2 
+getPackageDetailsRaw, ResolverRequestQueue workerQueue, Int32 taskTimeout, ConcurrentDictionary`2 startedGetPackageDetailsRequests, FSharpFunc`2 
+getPackageDetailsBlock, ConcurrentDictionary`2 startedGetVersionsRequests, FSharpFunc`2 getVersionsBlock, FSharpOption`1 packageFilter, IDictionary`2 rootSettings, 
+FSharpSet`1 lockedPackages, Stage stage, StackPack stackpack, IEnumerable`1 compatibleVersions, StepFlags flags)
+        at Paket.PackageResolver.Resolve[a](FSharpFunc`2 getVersionsRaw, FSharpFunc`2 getPreferredVersionsRaw, FSharpFunc`2 getPackageDetailsRaw, GroupName groupName, 
+FSharpOption`1 globalStrategyForDirectDependencies, FSharpOption`1 globalStrategyForTransitives, FrameworkRestrictions globalFrameworkRestrictions, FSharpSet`1 
+rootDependencies, UpdateMode updateMode)
+        at <StartupCode$Paket-Core>.$DependenciesFile.resolveGroup@212-1.Invoke(GroupName groupName, c _arg1)
+        at Microsoft.FSharp.Collections.MapTreeModule.mapiOpt[a,b,c](FSharpFunc`3 f, MapTree`2 m)
+        at Microsoft.FSharp.Collections.FSharpMap`2.Map[b](FSharpFunc`2 f)
+        at Paket.UpdateProcess.selectiveUpdate[a](Boolean force, FSharpFunc`2 getSha1, FSharpFunc`2 getVersionsF, FSharpFunc`2 getPackageDetailsF, FSharpFunc`2 
+getRuntimeGraphFromPackage, LockFile lockFile, DependenciesFile dependenciesFile, UpdateMode updateMode, SemVerUpdateMode semVerUpdateMode)
+        at Paket.UpdateProcess.SelectiveUpdate(DependenciesFile dependenciesFile, FSharpOption`1 alternativeProjectRoot, UpdateMode updateMode, SemVerUpdateMode 
+semVerUpdateMode, Boolean force)
+        at Paket.UpdateProcess.SmartInstall(DependenciesFile dependenciesFile, UpdateMode updateMode, UpdaterOptions options)
+        at <StartupCode$Paket-Core>.$PublicAPI.ConvertFromNuget@100.Invoke(Unit unitVar0)
+        at Paket.Utils.RunInLockedAccessMode[a](String rootFolder, FSharpFunc`2 action)
+        at Paket.Program.main@462-5.Invoke(ParseResults`1 results)
+        at Paket.Program.processWithValidation[T](Boolean silent, FSharpFunc`2 validateF, FSharpFunc`2 commandF, ParseResults`1 result)
+        at Paket.Program.main$cont@453(ParseResults`1 results, Boolean silent, Boolean fromBootstrapper, Unit unitVar)
+        at Paket.Program.main()
+
+-> TimeoutException: Waited 30 seconds for a request to finish.
+         Check the following sources, they might be rate limiting and stopped responding:
+          - https://dotnet.myget.org/F/dotnet-core
+          - https://dotnet.myget.org/F/cli-deps
+
+          - https://api.nuget.org/v3/index.json
